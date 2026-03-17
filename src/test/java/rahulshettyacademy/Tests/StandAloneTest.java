@@ -34,7 +34,7 @@ public class StandAloneTest extends BaseTest{
 
 		@Test(dataProvider ="getData", groups ={"purchase"})
 		public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException {
-		
+		//cicd testing
 		ProductCatalogue productCatalogue = landingpage.LoginApplication(input.get("email"), input.get("password"));
 		
 		List<WebElement> ProdList = productCatalogue.getProductList();
